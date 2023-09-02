@@ -45,8 +45,9 @@
         "url": "git+https://github.com/contentful/starter-gatsby-blog.git"
     },
     "scripts": {
+        "clean": "gatsby clean",
         "cm": "git-cz",
-        "dev": "gatsby develop",
+        "dev": "npm run clean && gatsby develop",
         "build": "gatsby build",
         "heroku-postbuild": "gatsby build",
         "serve": "gatsby serve",
